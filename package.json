@@ -4,14 +4,19 @@
   "description": "I'll try to  do it",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "heroku-postbuild": "npm run build"
   },
   "keywords": [],
   "author": "Eva Siti Nurjanah",
   "license": "ISC",
-  "engines":{
-    "node":"14.18.0"
+  "engines": {
+    "node": "14.18.0"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -21,6 +26,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^4.2.2",
     "mongoose": "^6.1.2",
-    "multer": "^1.4.4"
+    "multer": "^1.4.4",
+    "nodemon": "^2.0.15"
   }
 }
