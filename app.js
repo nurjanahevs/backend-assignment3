@@ -17,7 +17,7 @@ app.use(express.json());
 
 let port = process.env.PORT;
     if(port == null || port == ''){
-    port = 5000
+    port = 3000
 
     }
 
