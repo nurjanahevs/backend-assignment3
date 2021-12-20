@@ -10,7 +10,7 @@ const app = express()
 
 app.use(express.urlencoded({ extended: true }));
 app.use(cors())
-app.use('/images', express.static('iamges'));
+app.use('/images', express.static('images'));
 app.use(bodyParser.json())
 app.use(router)
 app.use(express.json());
