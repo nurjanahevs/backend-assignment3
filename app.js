@@ -6,7 +6,6 @@ const bodyParser = require('body-parser');
 
 mongooseConnect()
 const app = express()
-// const port = 3000
 
 app.use(express.urlencoded({ extended: true }));
 app.use(cors())
