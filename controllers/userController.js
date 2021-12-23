@@ -16,7 +16,7 @@ class userController {
         User.findOne({ email : email })
         .then(user => {
             if (user && bcrypt.compareSync(password, user.password)) {
-                const token = jwt.sign({_id :  user._id, role : user.role }, 'WIRYA',{ expiresIn : '24h'})
+                const token = jwt.sign({_id :  user._id, role : user.role }, 'EVA',{ expiresIn : '24h'})
                 res.status(200).send({ success: true, user, token })
             }
                 else if(!user) {next({name: 'NOT_FOUND'})}
